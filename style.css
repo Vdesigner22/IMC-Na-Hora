@@ -1,11 +1,10 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Corpo da página */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -13,7 +12,6 @@
     padding: 20px;
   }
   
-  /* Título no topo */
   .TextTop {
     font-size: 24px;
     text-align: center;
@@ -21,7 +19,7 @@
     color: #333;
   }
   
-  /* Área principal */
+
   main {
     display: flex;
     justify-content: center;
@@ -32,15 +30,15 @@
     width: 100%;
   }
   
-  /* Seção de dietas */
+ 
   .dietas {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 20px; 
     width: 100%;
   }
   
-  /* Estilo para cada categoria de peso */
+
   .underweight,
   .Idealweight,
   .SlightlyOverweight,
@@ -48,7 +46,7 @@
   .Obesity2Grade,
   .Obesity3Grade {
     background-color: #fff;
-    border-left: 4px solid #FF65C3; /* destaque visual */
+    border-left: 4px solid #FF65C3; 
     padding: 15px;
     border-radius: 8px;
     font-size: 16px;
@@ -57,7 +55,7 @@
     display: none;
   }
   
-  /* Responsividade para telas pequenas */
+  
   @media (max-width: 768px) {
     .TextTop {
       font-size: 20px;
