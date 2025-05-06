@@ -1,289 +1,82 @@
-body {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-header {
-  font-family: "Inter", sans-serif;
-  padding-left: 20%;
-  padding-right: 20%;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-.TextImportant {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.TextTop {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  padding-left: 22%;
-  padding-right: 22%;
-  padding-top: 20px;
-}
-
-main {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  width: 100vh;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-.Problem {
-  border-radius: 20px;
-}
-
-.container {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 600px;
-  align-items: center;
-  justify-content: space-evenly;
-  border-radius: 20px;
-  box-shadow: 0 0 10px green;
-  margin-top: -350px;
-}
-
-.dietas {
-  font-family: "Inter", sans-serif;
-  margin-top: -330px; /* Sobe a .dietas em 20px (ajuste o valor conforme necessário) */
-  padding: 0px;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  font: bold 1.5rem "Inter", sans-serif;
-  border-bottom: solid 5px green;
-  margin-bottom: 20px;
-}
-
-.input {
-  display: flex;
-  width: 300px;
-  height: 50px;
-  justify-content: space-between;
-  align-items: center;
-  font: bold 1.5rem "Inter", sans-serif;
-}
-
-.input input {
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  border: 2px solid green;
-  outline: 0;
-  font: bold 1.5rem "Inter", sans-serif;
-  text-align: center;
-}
-
-.input label {
-  font: bold 1.5rem "Inter", sans-serif;
-}
-
-button {
-  width: 300px;
-  height: 40px;
-  font: bold 1.5rem "Inter", sans-serif;
-  background: green;
-  color: white;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid gray;
-}
-
-.result {
-  display: flex;
-  margin-top: 20px;
-  align-items: center;
-  width: 300px;
-  height: 150px;
-  border-radius: 8px;
-  font: bold 1.5rem "Inter", sans-serif;
-  box-shadow: 0px 0px 10px green;
-  padding: 20px;
-  box-sizing: border-box;
-  user-select: none;
-}
-
-.underweight {
-  box-shadow: 0px 0px 15px green;
-  border-radius: 10px;
-  display: none;
-  width: 70vh;
-  margin-bottom: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.Idealweight {
-  box-shadow: 0px 0px 15px green;
-  border-radius: 10px;
-  display: none;
-  width: 70vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.SlightlyOverweight {
-  box-shadow: 0px 0px 15px green;
-  border-radius: 10px;
-  display: none;
-  width: 70vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.Obesity1Grade {
-  box-shadow: 0px 0px 15px green;
-  border-radius: 10px;
-  display: none;
-  width: 70vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.Obesity2Grade {
-  box-shadow: 0px 0px 15px green;
-  border-radius: 10px;
-  display: none;
-  width: 70vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.Obesity3Grade {
-  box-shadow: 0px 0px 15px green;
-  border-radius: 10px;
-  display: none;
-  width: 70vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 932px) {
-  /* Garante que o site fique centralizado e sem margens */
-body {
-  margin: 0 auto;
-  padding: 0;
-}
-
-/* Texto do topo */
-.TextTop {
-  font-size: 24px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-/* Estrutura principal da página */
-main {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Container das dietas */
-.dietas {
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 80px;
-  margin: 0 auto;
-  max-width: 800px;
-  width: 90%;
-}
-
-/* Estilos para cada faixa de peso */
-.underweight,
-.Idealweight,
-.SlightlyOverweight,
-.Obesity1Grade,
-.Obesity2Grade,
-.Obesity3Grade {
-  font-size: 12px;
-  width: 90%;
-  max-width: 350px;
-  margin: 10px auto;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Título no topo */
   .TextTop {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 40px;
+    color: #333;
   }
-
+  
+  /* Área principal */
   main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .dietas {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
     width: 100%;
   }
-
+  
+  /* Seção de dietas */
+  .dietas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 100%;
+  }
+  
+  /* Estilo para cada categoria de peso */
   .underweight,
   .Idealweight,
   .SlightlyOverweight,
   .Obesity1Grade,
   .Obesity2Grade,
   .Obesity3Grade {
-    width: 100%;
-    margin: 10px 0;
-    font-size: 14px;
+    background-color: #fff;
+    border-left: 4px solid #FF65C3; /* destaque visual */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: none;
   }
-}
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    .TextTop {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    main {
+      padding: 0 10px;
+    }
+  
+    .underweight,
+    .Idealweight,
+    .SlightlyOverweight,
+    .Obesity1Grade,
+    .Obesity2Grade,
+    .Obesity3Grade {
+      font-size: 15px;
+      padding: 12px;
+      
+    }
+  }
+  
