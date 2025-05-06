@@ -206,75 +206,84 @@ button {
 }
 
 @media (max-width: 932px) {
-  body {
-    margin: 0 auto;
-    padding: 0;
-  }
+  /* Garante que o site fique centralizado e sem margens */
+body {
+  margin: 0 auto;
+  padding: 0;
+}
 
+/* Texto do topo */
+.TextTop {
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* Estrutura principal da página */
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container das dietas */
+.dietas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+/* Estilos para cada faixa de peso */
+.underweight,
+.Idealweight,
+.SlightlyOverweight,
+.Obesity1Grade,
+.Obesity2Grade,
+.Obesity3Grade {
+  font-size: 12px;
+  width: 90%;
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
   .TextTop {
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
   }
 
   main {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
   }
 
   .dietas {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: 0 20px;
+    width: 100%;
   }
 
-  .underweight {
-    font-size: 12px;
-    margin-left: 220px;
-    margin-right: 220px;
-    width: 350px;
-   
-  }
-
-  .Idealweight {
-    font-size: 12px;
-    margin-left: 220px;
-    margin-right: 220px;
-    width: 350px;
-  }
-
-  .SlightlyOverweight {
-    font-size: 12px;
-    margin-left: 220px;
-    margin-right: 220px;
-    width: 350px;
-  }
-
-  .Obesity1Grade {
-    font-size: 12px;
-    margin-left: 220px;
-    margin-right: 220px;
-    width: 350px;
-  }
-
-  .Obesity2Grade {
-    font-size: 12px;
-    margin-left: 220px;
-    margin-right: 220px;
-    width: 350px;
-  }
-
+  .underweight,
+  .Idealweight,
+  .SlightlyOverweight,
+  .Obesity1Grade,
+  .Obesity2Grade,
   .Obesity3Grade {
-    font-size: 12px;
-    margin-left: 220px;
-    margin-right: 220px;
-    width: 350px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
   }
 }
