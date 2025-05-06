@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora-IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/favicon-16x16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p><h1 class="TextImportant">A Importância de Calcular o Seu Peso</h1>
+            Calcular o seu peso e acompanhar o <strong>Índice de Massa Corporal (IMC)</strong>  é fundamental para a manutenção da saúde e do bem-estar. O <strong>IMC</strong> é uma ferramenta simples que ajuda a avaliar se o seu peso está dentro de uma faixa saudável para a sua altura. Ele pode ser um alerta importante sobre possíveis riscos à saúde, como <strong>sobrepeso</strong>, <strong>obesidade</strong> ou <strong>baixo peso .</strong>Manter um peso adequado é essencial para prevenir doenças como problemas:
+            <ul><li><strong>cardíacos💓</strong><li><strong>diabetes tipo 2</strong>🍬</li> <li><strong>hipertensão</strong>💉</li> <li><strong>e certos tipos de câncer</strong>🎗️</li></ul>
+            
+            O excesso de peso, especialmente a <strong>gordura abdominal</strong>, aumenta o risco dessas condições, enquanto o baixo peso pode indicar deficiências nutricionais ou problemas de saúde, como <strong>distúrbios alimentares</strong> .
+            
+            Ao calcular o seu <strong>IMC</strong>, você pode monitorar seu peso de forma prática e eficaz, ajudando a identificar a necessidade de ajustes em sua <strong>alimentação</strong>, <strong>rotina de exercícios</strong> ou <strong>cuidados médicos </strong>. Embora o <strong>IMC</strong> não avalie a composição corporal (como músculos versus gordura), ele fornece uma boa indicação de quando é necessário adotar mudanças em seus hábitos.
+            
+            Fazer o acompanhamento do seu peso é uma maneira de adotar um <strong>estilo de vida saudável e equilibrado</strong>, com foco na <strong>qualidade de vida a longo prazo</strong>. Lembre-se: cuidar do seu corpo vai muito além da estética, é sobre manter sua saúde em dia.
+            </p>
+
+            <div>
+                <H1 class="TextTop">PARA INICIAR, INFORME AS SEGUINTES INFORMAÇÕES:</H1>
+            </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="title">Calculadora - IMC</div>
+            <div class="input">
+                <label>Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="input">
+                <label>Altura:</label>
+                <input type="number" id="altura">
+            </div>
+            <div class="input">
+                <label>Peso:</label>
+                <input type="number" id="peso">
+            </div>
+            <button id="calcular">Calcular</button>
+            <div class="result" id="resultado"></div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="dietas" id="dietas">
+        <div class="underweight" id="underweight">
+            <p><H1>🍽️Dieta para Ganho de Peso Saudável</H1>
+ <h2>⚠️Importante: esta é uma sugestão geral. O ideal é consultar um nutricionista para uma dieta personalizada de acordo com suas necessidades, exames e objetivos.⚠️</h2>
+
+<h3>🕗 Café da Manhã</h3>
+<ul><li>1 copo de vitamina de banana com leite integral + aveia + pasta de amendoim</li>
+
+    <li>2 fatias de pão integral com queijo ou ovo mexido</li>
+
+    <li>1 fruta (mamão, abacate ou manga são ótimas para ganhar peso)</li></ul>
+
+<h3>🕙 Lanche da Manhã</h3>
+<ul><li>1 iogurte integral ou grego natural</li>
+
+    <li>1 punhado de castanhas ou amendoim sem sal</li>
+
+    <li>1 barra de cereal com proteína (opcional)</li></ul>
+
+<h3>🍛 Almoço</h3>
+<ul><li>Arroz integral ou branco + feijão</li>
+
+    <li>1 carne magra (frango, carne vermelha ou peixe)</li>
+
+    <li>Legumes refogados (abobrinha, cenoura, brócolis)</li>
+
+    <li>Salada com azeite extra virgem</li>
+
+    <li>1 copo de suco natural ou água</li></ul>
+
+<h3>🕒 Lanche da Tarde</h3>
+<ul><li>1 sanduíche com pão integral, atum ou frango desfiado e requeijão</li>
+
+    <li>1 fruta calórica (abacate, banana ou uva)</li>
+
+    <li>1 copo de leite integral ou achocolatado</li></ul>
+
+<h3>🌙 Jantar</h3>
+<ul><li>Igual ao almoço (pode variar a proteína e os legumes)</li>
+
+    <li>Se preferir algo mais leve: sopa com batata-doce, frango desfiado e legumes</li></ul>
+
+<h3>🕘 Ceia (antes de dormir)</h3>
+<ul><li>1 copo de vitamina (leite + fruta + aveia ou granola)</li>
+
+    <li>1 colher de pasta de amendoim ou mix de oleaginosas</li></ul>
+</p>
+        </div>
+
+        <div class="Idealweight" id="Idealweight">
+        <p><h1>🍽️Dieta para Manutenção do Peso Ideal</h1>
+ <h2>⚠️Importante: esta é uma sugestão geral para manter o equilíbrio. Para personalização, consulte um nutricionista com base no seu estilo de vida e objetivos.⚠️</h2>
+
+<h3>🕗 Café da Manhã</h3>
+<ul>
+<li>1 copo de leite desnatado ou bebida vegetal (aveia, amêndoas)</li>
+
+<li>1 fatia de pão integral com ovo mexido ou queijo branco</li>
+
+<li>1 fruta da estação (maçã, banana, mamão ou laranja)</li></ul>
+
+<h3>🕙 Lanche da Manhã</h3>
+<ul>
+    <li>1 iogurte natural ou kefir</li>
+
+    <li>1 colher de aveia ou chia</li>
+
+    <li>1 fruta pequena (como morango ou uvas)</li></ul>
+
+<h3>🍛 Almoço</h3>
+<ul>
+    <li>Arroz integral ou batata-doce</li>
+
+    <li>Feijão ou lentilha</li>
+
+    <li>Proteína magra: frango grelhado, peixe ou carne magra</li>
+
+    <li>Legumes cozidos ou refogados (cenoura, chuchu, abobrinha)</li>
+
+    <li>Salada crua com azeite de oliva extra virgem</li>
+
+    <li>1 copo de água ou suco natural sem açúcar</li></ul>
+
+<h3>🕒 Lanche da Tarde</h3>
+<ul><li>1 fatia de pão integral com requeijão light ou pasta de atum</li>
+
+    <li>Chá natural ou café sem açúcar</li>
+
+    <li>1 fruta (como pera ou ameixa)</li></ul>
+
+<h3>🌙 Jantar</h3>
+<ul><li>Similar ao almoço, mas com porções menores</li>
+
+<li>Alternativa: omelete com legumes e salada</li>
+
+    <li>Evitar massas e carboidratos pesados à noite</li></ul>
+
+<h3>🕘 Ceia (opcional, se houver fome)</h3>
+<ul><li>1 copo de leite morno ou chá calmante</li>
+
+    <li>1 castanha-do-pará ou noz</li></ul></p>
+        </div>
+
+    <div class="SlightlyOverweight" id="SlightlyOverweight">
+        <p><h1>🍽️Dieta para Quem Está Levemente Acima do Peso</h1>
+<h2>⚠️Importante: esta é uma sugestão geral. Para resultados mais precisos e seguros, o ideal é contar com o acompanhamento de um nutricionista.⚠️</h2>
+
+<h3>🕗 Café da Manhã</h3>
+<ul>
+    <li>1 copo de leite desnatado ou bebida vegetal sem açúcar</li>
+
+    <li>1 fatia de pão integral com queijo branco ou ovo cozido</li>
+
+        <li>1 fruta com casca (maçã, pera, ameixa)</li>
+
+            <li>1 colher de chia ou linhaça (pode misturar na fruta ou no pão)</li></ul>
+
+<h3>🕙 Lanche da Manhã</h3>
+<ul>
+    <li>1 iogurte natural desnatado</li>
+
+    <li>1 colher de aveia</li>
+
+        <li>1 fruta pequena (morango, kiwi, melão)</li></ul>
+
+<h3>🍛 Almoço</h3>
+<ul>
+    <li>3 colheres de arroz integral ou 1 porção de batata-doce</li>
+
+    <li>Feijão ou grão-de-bico</li>
+
+        <li>Proteína magra (frango grelhado, peixe ou carne magra cozida)</li>
+
+            <li>Legumes cozidos (brócolis, couve-flor, cenoura)</li>
+
+                <li>Salada verde com azeite de oliva (1 colher de chá)</li>
+
+                    <li>1 copo de água (evitar sucos durante a refeição)</li></ul>
+
+<h3>🕒 Lanche da Tarde</h3>
+<ul>
+    <li>1 fatia de pão integral ou 2 torradas com pasta de atum ou requeijão light</li>
+
+    <li>1 fruta (banana, maçã ou pêssego)</li>
+
+        <li>Chá sem açúcar (opcional)</li></ul>
+
+<h3>🌙 Jantar</h3>
+<ul>
+    <li>Omelete de 2 ovos com legumes ou</li>
+
+    <li>Salada completa com folhas, tomate, cenoura ralada, frango desfiado e azeite (1 colher de chá)</li>
+
+        <li>Se estiver com mais fome: 1 porção pequena de arroz integral + legumes</li></ul>
+
+<h3>🕘 Ceia (opcional)</h3>
+<ul>
+    <li>1 copo de chá de camomila ou erva-doce</li>
+
+    <li>1 colher de castanhas ou 1 fruta leve (como ameixa ou pera)</li></ul></p>
+    </div>
+
+    <div class="Obesity1Grade" id="Obesity1Grade">
+        <p><h1>🍽️Dieta para Obesidade Grau 1</h1>
+<h2>⚠️Importante: esta é uma sugestão educativa. O acompanhamento com nutricionista e médico é essencial, principalmente em casos de obesidade, para considerar exames, histórico e estilo de vida.⚠️</h2>
+
+<h3>🕗 Café da Manhã</h3>
+<ul>
+    <li>1 xícara de café preto sem açúcar ou chá natural</li>
+
+<li>1 fatia de pão integral ou 2 torradas integrais</li>
+
+<li>1 ovo cozido ou mexido sem óleo</li>
+
+<li>1 fruta com baixo índice glicêmico (maçã, pera ou kiwi)</li>
+
+<li>1 colher de chia ou linhaça (pode misturar na fruta)</ul>
+
+<h3>🕙 Lanche da Manhã</h3>
+<ul>
+    <li>1 iogurte natural desnatado ou vegetal sem açúcar</li>
+
+    <li>1 punhado de sementes (linhaça, chia ou castanha-do-pará)</ul>
+
+<H3>🍛 Almoço</H3>
+<ul>
+    <li>3 colheres de arroz integral ou quinoa</li>
+
+    <li>Feijão ou lentilha (1 concha)</li>
+
+        <li>Proteína magra grelhada ou cozida: frango, peixe ou carne magra</li>
+
+            <li>Legumes cozidos ou refogados (brócolis, abobrinha, couve-flor)</li>
+
+                <li>Salada crua à vontade com azeite de oliva extra virgem (1 colher de chá)</li></ul>
+
+<h3>🕒 Lanche da Tarde</h3>
+<ul>
+    <li>1 fruta + 1 colher de aveia</li>
+
+    OU
+
+<li>1 fatia de pão integral com cottage ou requeijão light</li></ul>
+
+<h3>🌙 Jantar</h3>
+<ul>
+    <li>Omelete com 2 ovos + legumes salteados</li>
+
+OU
+
+<li>Sopa leve de legumes com frango desfiado</li>
+
+<li>Salada crua com azeite de oliva (opcional)</li></ul>
+
+<h3>🕘 Ceia (opcional, se houver fome)</h3>
+<ul>
+    <li>1 copo de chá calmante (camomila, capim-limão)</li>
+
+    <li>1 fruta leve (maçã pequena, ameixa, ou 1 colher de abacate)</li></ul></p>
+    </div>
+
+    <div class="Obesity2Grade" id="Obesity2Grade">
+        <p><h1>🍽️Dieta para Obesidade Grau 2</h1>
+<h2>⚠️Atenção: Esta é uma sugestão educativa. Pessoas com obesidade grau 2 devem ter acompanhamento de um nutricionista e médico, já que o risco de comorbidades é mais alto (diabetes, hipertensão, apneia, etc.). O plano alimentar precisa ser individualizado.⚠️</h2>
+
+<h3>🕗 Café da Manhã</h3>
+<ul>
+    <li>1 copo de água com limão (em jejum, se tolerado)</li>
+
+    <li>1 xícara de chá verde ou café sem açúcar</li>
+
+        <li>1 fatia de pão integral ou 2 torradas integrais</li>
+
+            <li>1 ovo cozido ou mexido sem óleo</li>
+
+                <li>1 fruta com baixo índice glicêmico (maçã, pera, morango)</li></ul>
+
+<h3>🕙 Lanche da Manhã</h3>
+<ul>
+    <li>1 iogurte desnatado sem açúcar ou bebida vegetal sem adoçante</li>
+
+    <li>1 colher de sementes (chia, linhaça ou mix de castanhas picadas)</li></ul>
+
+<h3>🍛 Almoço</h3>
+<ul>2 colheres de arroz integral ou quinoa
+
+    <li>1 concha de feijão, lentilha ou grão-de-bico</li>
+
+        <li>Proteína magra (frango grelhado, carne magra ou peixe assado)</li>
+
+            <li>Legumes cozidos (abobrinha, brócolis, cenoura)</li>
+
+                <li>Salada crua com azeite (1 colher de chá), limão e ervas naturais</li>
+
+                    <li>1 copo de água (evitar sucos e refrigerantes)</li></ul>
+
+<h3>🕒 Lanche da Tarde</h3>
+<ul>
+    <li>1 fruta (banana pequena, maçã ou kiwi)</li>
+
+OU
+
+<li>1 fatia de pão integral com cottage ou pasta de frango light</li></ul>
+
+<h3>🌙 Jantar</h3>
+<ul>
+    <li>Sopa de legumes com frango desfiado OU</li>
+
+    <li>Omelete com legumes refogados (espinafre, tomate, cebola)</li>
+
+        <li>Salada leve com folhas verdes e azeite</li></ul>
+
+<h3>🕘 Ceia (opcional, se houver fome)</h3>
+<ul>
+    <li>1 xícara de chá calmante (camomila ou erva-doce)</li>
+
+    <li>1 colher de abacate ou 1 fruta pequena (ameixa, pera)</li></ul></p>
+    </div>
+
+    <div class="Obesity3Grade" id="Obesity3Grade">
+        <p><h1>🍽️Dieta para Obesidade Grau 3 (Obesidade Mórbida)</h1>
+<h2>⚠️Atenção: A obesidade grau 3 exige acompanhamento médico e nutricional constante. Esta dieta é apenas um modelo educativo, não substitui um plano individualizado. Pode ser necessário apoio psicológico, medicamentos ou cirurgia bariátrica.⚠️</h2>
+
+<h3>🕗 Café da Manhã</h3>
+<ul>
+    <li>1 copo de chá verde ou chá de hibisco sem açúcar</li>
+
+    <li>1 fatia de pão integral ou 2 torradas sem glúten</li>
+
+        <li>1 ovo cozido ou mexido (sem óleo) ou 2 colheres de cottage</li>
+
+            <li>1 fruta com baixo índice glicêmico (pera, maçã ou morango)</li>
+
+                <li>1 colher de chia ou linhaça na fruta ou no pão</li></ul>
+
+<h3>🕙 Lanche da Manhã</h3>
+<ul>
+    <li>1 iogurte natural desnatado ou vegetal sem açúcar</li>
+
+OU
+
+<li>1 punhado pequeno de castanhas ou sementes (chia, girassol)</li></ul>
+
+<h3>🍛 Almoço</h3>
+<ul>
+    <li>2 colheres de arroz integral OU 1 colher de purê de batata-doce</li>
+
+    <li>1 concha pequena de feijão ou lentilha</li>
+
+        <li>Proteína magra (frango grelhado, peixe assado ou carne vermelha magra)</li>
+
+            <li>Legumes refogados (abobrinha, cenoura, chuchu)</li>
+
+                <li>Salada crua à vontade com azeite (1 colher de chá) + limão</li>
+
+                    <li>1 copo de água (evite qualquer bebida com açúcar)</li></ul>
+
+<h3>🕒 Lanche da Tarde</h3>
+<ul>
+    <li>1 fruta média (banana pequena, maçã ou melão)</li>
+
+OU
+
+<li>1 fatia de pão integral com pasta de atum ou cottage light</li></ul>
+
+<h3>🌙 Jantar</h3>
+<ul>
+    <li>Sopa leve de legumes com frango desfiado</li>
+
+OU
+
+<li>Omelete com espinafre, cebola e tomate</li>
+
+<li>Salada de folhas verdes com azeite (opcional)</li></ul>
+
+<h3>🕘 Ceia (opcional, se houver fome)</h3>
+<ul>
+    <li>1 xícara de chá calmante (camomila ou erva-doce)</li>
+
+    <li>1 colher de abacate OU 1 fruta leve (ameixa, kiwi)</li></ul></p>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
