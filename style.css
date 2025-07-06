@@ -1,80 +1,183 @@
-
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fce3ec, #ffe8f0);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fff0f6;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+  margin-bottom: 30px;
+}
+
+.TextImportant {
+  font-size: 2rem;
+  color: #ff409c;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.TextTop {
+  font-size: 1.5rem;
+  color: #cc3366;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #ffe3f2;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Lista de problemas */
+.ProblemList {
+  margin-left: 25px;
+  margin-top: 10px;
+  list-style: square;
+  color: #d10070;
+  font-weight: bold;
+}
+
+/* Container principal */
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.2);
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff65c3;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.input input {
+  padding: 10px;
+  border: 2px solid #ffb3d9;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.input input:focus {
+  border-color: #ff65c3;
+  outline: none;
+}
+
+/* Botão */
+button#calcular {
+  background-color: #ff65c3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+button#calcular:hover {
+  background-color: #e455ae;
+}
+
+/* Resultado */
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Dietas */
+footer {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  margin-bottom: 50px;
+}
+
+footer h1 {
+  color: #ff4081;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+footer h2 {
+  color: #cc3366;
+  font-size: 1rem;
+  background-color: #fff0f4;
+  padding: 10px;
+  border-left: 6px solid #ff65c3;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+footer h3 {
+  color: #a7005e;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+footer ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container, footer, header {
     padding: 20px;
   }
-  
+
+  .TextImportant {
+    font-size: 1.5rem;
+  }
+
   .TextTop {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
+    font-size: 1.2rem;
   }
-  
 
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
+  .title {
+    font-size: 1.4rem;
   }
-  
- 
-  .dietas {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-    width: 100%;
-  }
-  
 
-  .underweight,
-  .Idealweight,
-  .SlightlyOverweight,
-  .Obesity1Grade,
-  .Obesity2Grade,
-  .Obesity3Grade {
-    background-color: #fff;
-    border-left: 4px solid #FF65C3; 
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 16px;
-    color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    display: none;
+  button#calcular {
+    font-size: 0.95rem;
   }
-  
-  
-  @media (max-width: 768px) {
-    .TextTop {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-  
-    main {
-      padding: 0 10px;
-    }
-  
-    .underweight,
-    .Idealweight,
-    .SlightlyOverweight,
-    .Obesity1Grade,
-    .Obesity2Grade,
-    .Obesity3Grade {
-      font-size: 15px;
-      padding: 12px;
-      
-    }
+
+  footer h1 {
+    font-size: 1.3rem;
   }
-  
+}
